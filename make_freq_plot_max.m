@@ -24,6 +24,6 @@ max_freq = freq_domain(max_i);
 % take only the positive max frequency
 max_freq = max(max_freq(max_freq > 0)); 
 
-
+title("data in frequency domain")
 ylabel('Magnitude of signal');
 xlabel('Frequency (Hz)');
