@@ -16,7 +16,7 @@ freq_domain = linspace(-Fs/2, Fs/2-Fs/length(x),length(x));
 plot(freq_domain, 1/length(x)*fftshift(abs(fft(x))))
 
 % find top 2 maximum amplitude value and corresponding index
-[max_amp, max_i] = maxk(1/length(x)*fftshift(abs(fft(x))),3);
+[max_amp, max_i] = maxk(1/length(x)*fftshift(abs(fft(x))),10);
 
 % find maximum frequency
 max_freq = freq_domain(max_i);
